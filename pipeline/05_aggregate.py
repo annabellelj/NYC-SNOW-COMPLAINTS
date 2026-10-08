@@ -197,7 +197,7 @@ rows = "\n".join(
     "Counts include only requests with a recorded ZIP code and coordinates. "
     "These are counts of reports, not unique hazards or population-adjusted rates. "
     "The complaint categories changed between years.</p><p>"
-    "<a href='../../'>Back to story</a> · <a href='zip_complaint_counts.csv' download>Download CSV</a></p>"
+    "<a href='../'>Back to story</a> · <a href='zip_complaint_counts.csv' download>Download CSV</a></p>"
     "<table><caption>NYC 311 snow and ice requests with map locations</caption><thead>"
     "<tr><th scope='col'>ZIP</th><th scope='col'>Borough</th><th scope='col'>2016</th>"
     "<th scope='col'>2026</th></tr></thead><tbody>" + rows + "</tbody></table></main></html>\n"
