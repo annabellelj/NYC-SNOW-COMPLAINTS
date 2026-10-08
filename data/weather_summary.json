@@ -1,0 +1,44 @@
+{
+  "station": "GHCND:USW00094728",
+  "station_name": "NY City Central Park",
+  "source": "NOAA NCEI GHCN-Daily via https://www.ncei.noaa.gov/access/services/data/v1",
+  "units": "inches / degrees F",
+  "windows": {
+    "2016": {
+      "start": "2016-01-01",
+      "end_inclusive": "2016-02-06",
+      "days": 37,
+      "total_snowfall_in": 30.4,
+      "days_with_measurable_snowfall": 4,
+      "largest_daily_snowfall_in": 27.3,
+      "largest_daily_snowfall_date": "2016-01-23",
+      "days_snow_depth_ge_1in": 11,
+      "days_snow_depth_ge_6in": 4,
+      "max_snow_depth_in": 22.0,
+      "mean_daily_high_f": 42.6,
+      "mean_daily_low_f": 29.8,
+      "days_high_at_or_below_32f": 6,
+      "snow_source_flags": [
+        "W"
+      ]
+    },
+    "2026": {
+      "start": "2026-01-01",
+      "end_inclusive": "2026-02-06",
+      "days": 37,
+      "total_snowfall_in": 14.0,
+      "days_with_measurable_snowfall": 5,
+      "largest_daily_snowfall_in": 11.4,
+      "largest_daily_snowfall_date": "2026-01-25",
+      "days_snow_depth_ge_1in": 19,
+      "days_snow_depth_ge_6in": 12,
+      "max_snow_depth_in": 9.0,
+      "mean_daily_high_f": 35.4,
+      "mean_daily_low_f": 23.8,
+      "days_high_at_or_below_32f": 14,
+      "snow_source_flags": [
+        "1"
+      ]
+    }
+  }
+}

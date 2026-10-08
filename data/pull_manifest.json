@@ -1,0 +1,21 @@
+{
+  "pulled_at_utc": "2026-10-05T23:47:24+00:00",
+  "pulls": [
+    {
+      "year": 2016,
+      "resource_id": "76ig-c548",
+      "dataset": "311 Service Requests from 2010 to 2019",
+      "where": "created_date >= '2016-01-01T00:00:00' AND created_date < '2016-02-07T00:00:00' AND complaint_type = 'Snow'",
+      "rows": 5113,
+      "file": "snow_complaints_2016_raw.csv"
+    },
+    {
+      "year": 2026,
+      "resource_id": "erm2-nwe9",
+      "dataset": "311 Service Requests from 2020 to Present",
+      "where": "created_date >= '2026-01-01T00:00:00' AND created_date < '2026-02-07T00:00:00' AND complaint_type = 'Snow or Ice'",
+      "rows": 29265,
+      "file": "snow_complaints_2026_raw.csv"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NYC Snow: Less Snow, More Complaints</title>
+    <meta name="description" content="NYC 311 snow and ice complaints by ZIP code, Jan. 1 to Feb. 6, 2016 vs. 2026." />
+    <meta name="theme-color" content="#0a0f18" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❄</text></svg>" />
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <h1>Less snow, far more complaints</h1>
+        <p class="dek">
+          New Yorkers filed <strong data-text="t2026">29,265</strong> snow and ice complaints with 311 from Jan. 1 to Feb. 6,
+          2026, <strong data-text="ratio">5.7</strong> times as many as in the same weeks of 2016, when Central Park got more
+          than twice as much snow.
+        </p>
+        <p class="byline">By Annabelle Jiang</p>
+      </header>
+
+      <section class="figure" id="figure" aria-label="3D map of NYC snow and ice complaints by ZIP code, 2016 compared with 2026">
+        <div class="timeline">
+          <span class="date" aria-live="off">Jan. 1</span>
+          <div class="bar" aria-hidden="true"><div class="fill"></div></div>
+          <button class="btn pause" type="button" hidden>Pause</button>
+          <button class="btn replay" type="button" hidden>Replay</button>
+          <button class="btn rotate" type="button" aria-pressed="false" hidden>Rotate map</button>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="scene"></canvas>
+          <div class="panels">
+            <div class="panel" data-year="2016">
+              <div class="panel-label">
+                <span class="year">2016</span>
+                <span class="stats">
+                  <span><strong class="count">5,113</strong> <span class="count-noun">complaints</span></span>
+                  <span><span class="snow">30.4</span> in. of snow, Central Park</span>
+                </span>
+              </div>
+              <div class="stage"></div>
+            </div>
+            <div class="panel" data-year="2026">
+              <div class="panel-label">
+                <span class="year">2026</span>
+                <span class="stats">
+                  <span><strong class="count">29,265</strong> <span class="count-noun">complaints</span></span>
+                  <span><span class="snow">14.0</span> in. of snow, Central Park</span>
+                </span>
+              </div>
+              <div class="stage"></div>
+            </div>
+          </div>
+          <div class="tooltip" hidden></div>
+          <p class="no-webgl-message">This 3D map needs WebGL, which isn't available in this browser.</p>
+        </div>
+        <p class="hint" hidden></p>
+      </section>
+
+      <footer class="notes">
+        <div class="legend">
+          <div class="legend-item">
+            <svg class="legend-piles" aria-hidden="true"></svg>
+            <p>
+              <strong>Pile height</strong> = number of Snow/Ice 311 complaints in that ZIP code, Jan. 1 – Feb. 6.
+              Square-root scale, the same in both years.
+            </p>
+          </div>
+          <div class="legend-item">
+            <svg class="legend-flakes" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+              <circle cx="9" cy="8" r="2" /><circle cx="24" cy="5" r="1.6" /><circle cx="33" cy="15" r="2" />
+              <circle cx="15" cy="20" r="1.6" /><circle cx="28" cy="28" r="1.8" /><circle cx="8" cy="33" r="2" />
+            </svg>
+            <p><strong>Falling snow</strong> follows each day's measured snowfall in Central Park.</p>
+          </div>
+        </div>
+
+        <div class="source-notes">
+          <p><strong>Sources</strong>
+            NYC 311 Service Requests (<a href="https://data.cityofnewyork.us/d/76ig-c548">2016</a> and
+            <a href="https://data.cityofnewyork.us/d/erm2-nwe9">2026</a>);
+            <a href="https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt">NOAA GHCN-Daily</a> weather data from Central Park;
+            <a href="https://data.cityofnewyork.us/d/gthc-hcne">NYC Borough Boundaries</a>.</p>
+          <p><strong>Notes</strong>
+            Complaints are counted from Jan. 1–Feb. 6 in each year. Piles use ZIP-level locations and exclude
+            reports without usable location data. Complaint categories differ slightly between the two years.</p>
+        </div>
+        <div class="footer-links"><a href="data/zip-table.html">View ZIP table ↗</a>
+          <a href="data/zip_complaint_counts.csv" download>Download CSV ↓</a></div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
